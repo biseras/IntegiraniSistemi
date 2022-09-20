@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Movie.Domain.Models.MovieFilm>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div>
+
+    @foreach (var item in Model)
+    {
+        <div>
+            <div class="card" style="background-color: ghostwhite">
+                <h2 style="text-align: center">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="@item.ImageURL" style="height: 90%; width:90%" alt="Image!">
+                    </div>
+                    <div class="col-md-9">
+                        <div>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </div>
+                        <div>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </div>
+                        <div>
+                            @Html.DisplayFor(modelItem => item.datum)
+                        </div>
+                        <div>
+                            @Html.DisplayFor(modelItem => item.zanr)
+                        </div>
+                        <div>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </div>
+                        <div>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            <a asp-controller="Movie" asp-action="AddTicketToCard" asp-route-id="@item.Id" class="btn btn-info">Add to Card</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
