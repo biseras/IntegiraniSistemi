@@ -9,6 +9,8 @@ namespace Movie.Domain.Models
         public String Title { get; set; }
         public int Year { get; set; }
         public String Rated { get; set; }
+        public String imdbRating { get; set; }
+        public String imdbVotes { get; set; }
         public String Released { get; set; }
         public String Runtime { get; set; }
         public String Genre { get; set; } 

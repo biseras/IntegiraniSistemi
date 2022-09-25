@@ -7,3 +7,13 @@ C:\Users\38977\source\repos\MovieIntegrirani\Movie.Domain\bin\Debug\netcoreapp3.
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.dll
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.pdb
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.csproj.AssemblyReference.cache
+C:\Users\petko\Desktop\finki\integrirani\IntegiraniSistemi\Movie.Domain\bin\Debug\netcoreapp3.1\Movie.Domain.deps.json
+C:\Users\petko\Desktop\finki\integrirani\IntegiraniSistemi\Movie.Domain\bin\Debug\netcoreapp3.1\Movie.Domain.dll
+C:\Users\petko\Desktop\finki\integrirani\IntegiraniSistemi\Movie.Domain\bin\Debug\netcoreapp3.1\Movie.Domain.pdb
+C:\Users\petko\Desktop\finki\integrirani\IntegiraniSistemi\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.csproj.AssemblyReference.cache
+C:\Users\petko\Desktop\finki\integrirani\IntegiraniSistemi\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\petko\Desktop\finki\integrirani\IntegiraniSistemi\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.AssemblyInfoInputs.cache
+C:\Users\petko\Desktop\finki\integrirani\IntegiraniSistemi\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.AssemblyInfo.cs
+C:\Users\petko\Desktop\finki\integrirani\IntegiraniSistemi\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.csproj.CoreCompileInputs.cache
+C:\Users\petko\Desktop\finki\integrirani\IntegiraniSistemi\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.dll
+C:\Users\petko\Desktop\finki\integrirani\IntegiraniSistemi\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.pdb
