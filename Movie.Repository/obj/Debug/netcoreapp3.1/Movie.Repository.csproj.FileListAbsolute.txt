@@ -10,3 +10,16 @@ C:\Users\38977\source\repos\MovieIntegrirani\Movie.Repository\bin\Debug\netcorea
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.csproj.CopyComplete
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.dll
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.pdb
+D:\IS PROEKT\Movie.Repository\bin\Debug\netcoreapp3.1\Movie.Repository.deps.json
+D:\IS PROEKT\Movie.Repository\bin\Debug\netcoreapp3.1\Movie.Repository.dll
+D:\IS PROEKT\Movie.Repository\bin\Debug\netcoreapp3.1\Movie.Repository.pdb
+D:\IS PROEKT\Movie.Repository\bin\Debug\netcoreapp3.1\Movie.Domain.dll
+D:\IS PROEKT\Movie.Repository\bin\Debug\netcoreapp3.1\Movie.Domain.pdb
+D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.csproj.AssemblyReference.cache
+D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.AssemblyInfoInputs.cache
+D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.AssemblyInfo.cs
+D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.csproj.CoreCompileInputs.cache
+D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.csproj.CopyComplete
+D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.dll
+D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.pdb

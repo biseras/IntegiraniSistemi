@@ -10,7 +10,7 @@ namespace Movie.Domain.Domain
     {
         public string UserId { get; set; }
         public MovieUsers User { get; set; }
-
-        public virtual ICollection<FilmInOrder> FilmInOrders { get; set; }//TicketinOrder
+        public DateTime Created { get; set; }   
+        public virtual IList<FilmInOrder> FilmInOrders { get; set; }//TicketinOrder
     }
 }

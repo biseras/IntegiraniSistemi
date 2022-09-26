@@ -7,3 +7,13 @@ C:\Users\38977\source\repos\MovieIntegrirani\Movie.Domain\bin\Debug\netcoreapp3.
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.dll
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.pdb
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.csproj.AssemblyReference.cache
+D:\IS PROEKT\Movie.Domain\bin\Debug\netcoreapp3.1\Movie.Domain.deps.json
+D:\IS PROEKT\Movie.Domain\bin\Debug\netcoreapp3.1\Movie.Domain.dll
+D:\IS PROEKT\Movie.Domain\bin\Debug\netcoreapp3.1\Movie.Domain.pdb
+D:\IS PROEKT\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.csproj.AssemblyReference.cache
+D:\IS PROEKT\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\IS PROEKT\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.AssemblyInfoInputs.cache
+D:\IS PROEKT\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.AssemblyInfo.cs
+D:\IS PROEKT\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.csproj.CoreCompileInputs.cache
+D:\IS PROEKT\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.dll
+D:\IS PROEKT\Movie.Domain\obj\Debug\netcoreapp3.1\Movie.Domain.pdb

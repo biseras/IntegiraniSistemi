@@ -12,3 +12,18 @@ C:\Users\38977\source\repos\MovieIntegrirani\Movie.Service\bin\Debug\netcoreapp3
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.csproj.CopyComplete
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.dll
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.pdb
+D:\IS PROEKT\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Service.deps.json
+D:\IS PROEKT\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Service.dll
+D:\IS PROEKT\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Service.pdb
+D:\IS PROEKT\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Domain.dll
+D:\IS PROEKT\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Repository.dll
+D:\IS PROEKT\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Domain.pdb
+D:\IS PROEKT\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Repository.pdb
+D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.csproj.AssemblyReference.cache
+D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.AssemblyInfoInputs.cache
+D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.AssemblyInfo.cs
+D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.csproj.CoreCompileInputs.cache
+D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.csproj.CopyComplete
+D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.dll
+D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.pdb

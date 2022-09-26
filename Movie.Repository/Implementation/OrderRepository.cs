@@ -3,6 +3,7 @@ using Movie.Domain.Domain;
 using Movie.Repository.Interface;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Movie.Repository.Implementation
@@ -34,6 +35,25 @@ namespace Movie.Repository.Implementation
                 .Include(z => z.User)
                 .Include("FilmInOrders.SelectedFilm")
                 .SingleOrDefaultAsync(z=>z.Id==model.Id).Result;
+        }
+
+        public Order GetOrderDetailsById(Guid id)
+        {
+            return entities
+                .Include(z => z.FilmInOrders)
+                .Include(z => z.User)
+                .Include("FilmInOrders.SelectedFilm")
+                .SingleOrDefaultAsync(z => z.Id == id).Result;
+        }
+
+        public List<Order> GetAllOrdersByUser(string userId)
+        {
+            return entities
+                .Where( z => z.UserId == userId)
+                .Include(z => z.FilmInOrders)
+                .Include(z => z.User)
+                .Include("FilmInOrders.SelectedFilm")
+                .ToListAsync().Result;
         }
     }
 }

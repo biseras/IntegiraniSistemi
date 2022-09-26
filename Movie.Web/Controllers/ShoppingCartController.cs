@@ -65,15 +65,21 @@ namespace Movie.Web.Controllers
 
                 if (result)
                 {
-                    return RedirectToAction("Index", "ShoppingCard");
+                    return RedirectToAction("Index", "ShoppingCart");
                 }
                 else
                 {
-                    return RedirectToAction("Index", "ShoppingCard");
+                    return RedirectToAction("Index", "ShoppingCart");
                 }
             }
 
-            return RedirectToAction("Index", "ShoppingCard");
+            return RedirectToAction("Index", "ShoppingCart");
+        }
+
+        public IActionResult CreateOrder()
+        {
+            this.OrderNow();
+            return RedirectToAction("Index", "ShoppingCart"); ;
         }
         private Boolean OrderNow()
         {
