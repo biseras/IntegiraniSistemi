@@ -75,7 +75,8 @@ namespace Movie.Service.Implementation
                     {
                        Id = Guid.NewGuid(),
                        UserId = userId,
-                       User = loggedInUser
+                       User = loggedInUser,
+                       Created = DateTime.Now
                      };
                      this._orderRepository.Insert(orderItem);
                      List<FilmInOrder> filmInOrders = new List<FilmInOrder>();

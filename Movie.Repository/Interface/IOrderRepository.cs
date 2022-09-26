@@ -9,5 +9,7 @@ namespace Movie.Repository.Interface
     {
         List<Order> GetAllOrders();
         Order GetOrderDetails(BaseEntity model);
+        List<Order> GetAllOrdersByUser(string userId);
+        Order GetOrderDetailsById(Guid id);
     }
 }

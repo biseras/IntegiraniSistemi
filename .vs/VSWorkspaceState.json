@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Movie.Repository",
+    "\\Movie.Web",
+    "\\Movie.Web\\Controllers"
+  ],
+  "SelectedNode": "\\Movie.Repository\\ApplicationDbContext.cs",
+  "PreviewInSolutionExplorer": false
+}

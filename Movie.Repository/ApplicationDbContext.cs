@@ -19,7 +19,7 @@ namespace Movie.Repository
         public virtual DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public virtual DbSet<FilminShoppingCart> FilminShoppingCarts { get; set; }
         public virtual DbSet<EmailMessage> EmailMessages { get; set; }
-
+        public virtual DbSet<Order> Orders { get; set; }   
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -31,6 +31,10 @@ namespace Movie.Repository
                 .ValueGeneratedOnAdd();
 
             builder.Entity<ShoppingCart>()
+                .Property(z => z.Id)
+                .ValueGeneratedOnAdd();
+
+            builder.Entity<Order>()
                 .Property(z => z.Id)
                 .ValueGeneratedOnAdd();
 
