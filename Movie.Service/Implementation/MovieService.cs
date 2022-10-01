@@ -12,12 +12,12 @@ namespace Movie.Service.Implementation
 {
     public class MovieService : IMovieService
     {
-        private readonly IRepository<MovieFilm> _filmRepository;
+        private readonly IMovieRepository _movieRepository;
         private readonly IRepository<FilminShoppingCart> _filminShoppingCartRepository;
         private readonly IUserRepository _userRepository;
-        public MovieService(IRepository<MovieFilm> filmRepository, IRepository<FilminShoppingCart> filminShoppingCartRepository, IUserRepository userRepository)
+        public MovieService(IMovieRepository movieRepository, IRepository<FilminShoppingCart> filminShoppingCartRepository, IUserRepository userRepository)
         {
-            _filmRepository = filmRepository;
+            _movieRepository = movieRepository;
             _filminShoppingCartRepository = filminShoppingCartRepository;
             _userRepository = userRepository;
         }
@@ -51,23 +51,28 @@ namespace Movie.Service.Implementation
 
         public void CreateNewTicket(MovieFilm t)
         {
-            this._filmRepository.Insert(t);
+            this._movieRepository.Insert(t);
         }
 
         public void DeleteTicket(Guid id)
         {
             var ticket = this.GetDetailsForTicket(id);
-            this._filmRepository.Delete(ticket);
+            this._movieRepository.Delete(ticket);
         }
 
         public List<MovieFilm> GetAllTickets()
         {
-            return this._filmRepository.GetAll().ToList();
+            return this._movieRepository.GetAll().ToList();
         }
 
         public MovieFilm GetDetailsForTicket(Guid? id)
         {
-            return this._filmRepository.Get(id);
+            return this._movieRepository.Get(id);
+        }
+
+        public MovieFilm GetMovieByName(string name)
+        {
+            return this._movieRepository.GetByName(name);
         }
 
         public AddToShoppingCartDto GetShoppingCartInfo(Guid? id)
@@ -84,7 +89,7 @@ namespace Movie.Service.Implementation
 
         public void UpdeteExistingTicket(MovieFilm t)
         {
-            this._filmRepository.Update(t);
+            this._movieRepository.Update(t);
         }
     }
 }

@@ -3,8 +3,10 @@
     "",
     "\\Movie.Repository",
     "\\Movie.Web",
-    "\\Movie.Web\\Controllers"
+    "\\Movie.Web\\Controllers",
+    "\\Movie.Web\\Views",
+    "\\Movie.Web\\Views\\FilmInf"
   ],
-  "SelectedNode": "\\Movie.Repository\\ApplicationDbContext.cs",
+  "SelectedNode": "\\Movie.Web\\Views\\FilmInf\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

@@ -319,3 +319,4 @@ D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\libSkiaSh
 D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\ExcelDataReader.dll

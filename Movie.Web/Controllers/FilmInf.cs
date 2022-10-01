@@ -15,6 +15,14 @@ namespace Movie.Web.Controllers
 {
     public class FilmInf : Controller
     {
+
+        private readonly IMovieService _movieService;
+
+        public FilmInf(IMovieService movieService)
+        {
+            _movieService = movieService;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -41,6 +49,18 @@ namespace Movie.Web.Controllers
             string URL = "http://www.omdbapi.com/?t="+item.Name+"&apikey=293abe22";
             HttpResponseMessage response = client.GetAsync(URL).Result;
             var data = response.Content.ReadAsAsync<MovieA>().Result;
+            data.Added = this._movieService.GetMovieByName(data.Title) != null ? true: false;
+            return View("Index", data);
+        }
+
+        [HttpGet]
+        public ActionResult MovieDetails(string name, bool added)
+        {
+            HttpClient client = new HttpClient();
+            string URL = "http://www.omdbapi.com/?t=" + name + "&apikey=293abe22";
+            HttpResponseMessage response = client.GetAsync(URL).Result;
+            var data = response.Content.ReadAsAsync<MovieA>().Result;
+            data.Added = added;
             return View("Index", data);
         }
 

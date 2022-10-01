@@ -43,6 +43,7 @@ namespace Movie.Web
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
             services.AddScoped(typeof(IOrderRepository), typeof(OrderRepository));
+            services.AddScoped(typeof(IMovieRepository), typeof(MovieRepository));
             services.AddTransient<IMovieService, MovieService>();
             services.AddTransient<IShoppingCartService, ShoppingCartService>();
             services.AddTransient<IUserService, IUserServiceImpl>();
