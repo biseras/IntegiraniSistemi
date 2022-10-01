@@ -24,7 +24,16 @@
                         <h5>Language: @Html.DisplayFor(item => item.Language)</h5>
                         <h5>@Html.DisplayFor(item => item.Awards)</h5>
                         <p>Plot: @Html.DisplayFor(item => item.Plot)</p>
-                    </div>
+                        @if (Model.Added == false)
+                        {
+                            <a asp-controller="Movie" asp-action="AddMovieFromApi" 
+                            asp-route-title=@Model.Title 
+                            asp-route-description=@Model.Plot
+                            asp-route-genre=@Model.Genre 
+                            asp-route-image=@Model.Poster
+                            class="btn btn-dark">Add this movie</a>
+                        }
+                </div>
                 </div>
             </div>
         </div>

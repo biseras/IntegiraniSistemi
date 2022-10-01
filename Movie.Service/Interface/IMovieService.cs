@@ -10,6 +10,7 @@ namespace Movie.Service.Interface
     {
         List<MovieFilm> GetAllTickets();
         MovieFilm GetDetailsForTicket(Guid? id);
+        MovieFilm GetMovieByName(string name);
         void CreateNewTicket(MovieFilm t);
         void UpdeteExistingTicket(MovieFilm t);
         AddToShoppingCartDto GetShoppingCartInfo(Guid? id);

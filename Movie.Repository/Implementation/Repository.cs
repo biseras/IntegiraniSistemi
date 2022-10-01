@@ -28,6 +28,7 @@ namespace Movie.Repository.Implementation
         {
             return entities.SingleOrDefault(s => s.Id == id);
         }
+
         public void Insert(T entity)
         {
             if (entity == null)

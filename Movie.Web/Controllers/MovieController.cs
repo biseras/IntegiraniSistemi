@@ -10,6 +10,11 @@ using Movie.Domain.Identity;
 using Movie.Repository.Implementation;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using System.Collections.Generic;
+using ExcelDataReader;
+using Movie.Domain.Domain;
 
 namespace Movie.Web.Controllers
 {
@@ -26,7 +31,7 @@ namespace Movie.Web.Controllers
 
         // GET: Tickets
         public IActionResult Index()
-        {          
+        {
             var allMovies = _movieService.GetAllTickets();
             return View(allMovies);
         }
@@ -70,22 +75,22 @@ namespace Movie.Web.Controllers
         }
         public IActionResult AddTicketToCard(Guid? id)
         {
-            var model=this._movieService.GetShoppingCartInfo(id);
+            var model = this._movieService.GetShoppingCartInfo(id);
             return View(model);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult AddTicketToCard([Bind("FilmId", "Kvalitet")]AddToShoppingCartDto item)
+        public IActionResult AddTicketToCard([Bind("FilmId", "Kvalitet")] AddToShoppingCartDto item)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var result=this._movieService.AddToShoppingCart(item, userId);
+            var result = this._movieService.AddToShoppingCart(item, userId);
             MovieUsers user = _userService.Get(userId);
             var accountSID = "ACcb5ff2b20332747e2b91ec16438b1b44";
             var authToken = "6646a00114a64621e56cdd8804f706f2";
             TwilioClient.Init(accountSID, authToken);
             var tonum = user.PhoneNumber;
             var from = "+19786523857";
-            if(result)
+            if (result)
             {
                 var message = MessageResource.Create(
                 body: "New film is successfully added to your card. Check it!",
@@ -122,7 +127,9 @@ namespace Movie.Web.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Guid id, [Bind("Name,Description, datum, zanr, Price, ImageURL")] MovieFilm film)
         {
-            if (id != film.Id)
+            MovieFilm movie = _movieService.GetDetailsForTicket(id);
+
+            if (movie == null)
             {
                 return NotFound();
             }
@@ -131,7 +138,13 @@ namespace Movie.Web.Controllers
             {
                 try
                 {
-                    this._movieService.UpdeteExistingTicket(film);
+                    movie.Name = film.Name;
+                    movie.Description = film.Description;
+                    movie.datum = film.datum;
+                    movie.zanr = film.zanr;
+                    movie.Price = film.Price;
+                    movie.ImageURL = film.ImageURL;
+                    this._movieService.UpdeteExistingTicket(movie);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -178,6 +191,84 @@ namespace Movie.Web.Controllers
         private bool TicketExists(Guid id)
         {
             return this._movieService.GetDetailsForTicket(id) != null;
+        }
+
+        public IActionResult ImportMovies(IFormFile file)
+        {
+            string pathToUpload = $"{Directory.GetCurrentDirectory()}\\files\\{file.FileName}";
+
+            using (FileStream fileStream = System.IO.File.Create(pathToUpload))
+            {
+                file.CopyTo(fileStream);
+                fileStream.Flush();
+            }
+
+            List<MovieFilm> movies = getAllMoviesFromFile(file.FileName);
+
+            foreach (MovieFilm movie in movies)
+            {
+                if (this._movieService.GetMovieByName(movie.Name) == null)
+                {
+                    this._movieService.CreateNewTicket(movie);
+                }
+                else
+                {
+                    continue;
+                }
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        private List<MovieFilm> getAllMoviesFromFile(string fileName)
+        {
+            List<MovieFilm> movies = new List<MovieFilm>();
+
+            string filePath = $"{Directory.GetCurrentDirectory()}\\files\\{fileName}";
+
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+
+            using (var stream = System.IO.File.Open(filePath, FileMode.Open, FileAccess.Read))
+            {
+                using (var reader = ExcelReaderFactory.CreateReader(stream))
+                {
+                    while (reader.Read())
+                    {
+                        if(reader.GetValue(0) != null && reader.GetValue(1) != null && reader.GetValue(2) != null 
+                            && reader.GetValue(3) != null && reader.GetValue(4) != null && reader.GetValue(5) != null)
+                        {
+                            movies.Add(new Domain.Models.MovieFilm
+                            {
+                                Name = reader.GetValue(0).ToString(),
+                                Description = reader.GetValue(1).ToString(),
+                                datum = (DateTime)reader.GetValue(2),
+                                zanr = reader.GetValue(3).ToString(),
+                                Price = int.Parse(reader.GetValue(4).ToString()),
+                                ImageURL = reader.GetValue(5).ToString()
+                            });
+                        }
+                        
+                    }
+                }
+            }
+
+            return movies;
+        }
+
+        public IActionResult AddMovieFromApi(string title, string description, string genre, string image)
+        {
+            MovieFilm film = new MovieFilm
+            {
+                Name = title,
+                Description = description,
+                datum = DateTime.Now,
+                zanr = genre,
+                ImageURL = image
+            };
+            this._movieService.CreateNewTicket(film);
+            return RedirectToAction(nameof(Index));
+            
+            return View(film);
         }
     }
 }

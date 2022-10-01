@@ -9,6 +9,15 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-controller="Movie" asp-action="ImportMovies" method="post" enctype="multipart/form-data">
+    <div class="form-group w-25">
+        <input type="file" name="file" class="form-control" />
+    </div>    
+
+    <hr>
+
+    <button type="submit" class="btn btn-outline-primary">Import File</button>
+</form>
 <div>
 
     @foreach (var item in Model)
@@ -43,6 +52,7 @@
                             <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                             <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                             <a asp-controller="Movie" asp-action="AddTicketToCard" asp-route-id="@item.Id" class="btn btn-info">Add to Card</a>
+                            <a asp-controller="FilmInf" asp-action="MovieDetails" asp-route-name="@item.Name" asp-route-added="@true" class="btn btn-dark">More about movie</a>
                         </div>
                     </div>
                 </div>

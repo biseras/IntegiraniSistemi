@@ -20,5 +20,6 @@ namespace Movie.Domain.Models
         public String Country { get; set; }
         public String Awards { get; set; }
         public String Poster { get; set; }
+        public bool Added { get; set; }
     }
 }
