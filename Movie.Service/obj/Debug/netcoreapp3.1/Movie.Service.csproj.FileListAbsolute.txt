@@ -27,3 +27,18 @@ D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.csproj.CoreComp
 D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.csproj.CopyComplete
 D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.dll
 D:\IS PROEKT\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.pdb
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Service.deps.json
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Service.dll
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Service.pdb
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Domain.dll
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Repository.dll
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Domain.pdb
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\bin\Debug\netcoreapp3.1\Movie.Repository.pdb
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.csproj.AssemblyReference.cache
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.AssemblyInfoInputs.cache
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.AssemblyInfo.cs
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.csproj.CoreCompileInputs.cache
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.csproj.CopyComplete
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.dll
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Service\obj\Debug\netcoreapp3.1\Movie.Service.pdb

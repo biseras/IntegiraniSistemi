@@ -23,3 +23,16 @@ D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.csproj.Co
 D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.csproj.CopyComplete
 D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.dll
 D:\IS PROEKT\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.pdb
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\bin\Debug\netcoreapp3.1\Movie.Repository.deps.json
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\bin\Debug\netcoreapp3.1\Movie.Repository.dll
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\bin\Debug\netcoreapp3.1\Movie.Repository.pdb
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\bin\Debug\netcoreapp3.1\Movie.Domain.dll
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\bin\Debug\netcoreapp3.1\Movie.Domain.pdb
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.csproj.AssemblyReference.cache
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.AssemblyInfoInputs.cache
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.AssemblyInfo.cs
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.csproj.CoreCompileInputs.cache
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.csproj.CopyComplete
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.dll
+C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Repository\obj\Debug\netcoreapp3.1\Movie.Repository.pdb
