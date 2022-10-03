@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Movie.Repository",
     "\\Movie.Web",
     "\\Movie.Web\\Controllers",
     "\\Movie.Web\\Views",
     "\\Movie.Web\\Views\\FilmInf"
   ],
-  "SelectedNode": "\\Movie.Web\\Views\\FilmInf\\Index.cshtml",
+  "SelectedNode": "\\Movie.Web\\Controllers\\MovieController.cs",
   "PreviewInSolutionExplorer": false
 }

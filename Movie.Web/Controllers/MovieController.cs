@@ -15,6 +15,7 @@ using System.IO;
 using System.Collections.Generic;
 using ExcelDataReader;
 using Movie.Domain.Domain;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Movie.Web.Controllers
 {
@@ -52,7 +53,6 @@ namespace Movie.Web.Controllers
 
             return View(film);
         }
-
         // GET: Tickets/Create
         public IActionResult Create()
         {
@@ -64,7 +64,7 @@ namespace Movie.Web.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Name,Description, datum, zanr, Price, ImageURL")] MovieFilm film)
+        public IActionResult Create([Bind("Name,Description, datum, zanr, Price, ImageURL, trailerURL")] MovieFilm film)
         {
             if (ModelState.IsValid)
             {
@@ -87,14 +87,16 @@ namespace Movie.Web.Controllers
             MovieUsers user = _userService.Get(userId);
             var accountSID = "ACcb5ff2b20332747e2b91ec16438b1b44";
             var authToken = "6646a00114a64621e56cdd8804f706f2";
-            TwilioClient.Init(accountSID, authToken);
+            
             var tonum = user.PhoneNumber;
             var from = "+19786523857";
             if (result)
             {
+                TwilioClient.Init(username: accountSID,
+                password: authToken);
                 var message = MessageResource.Create(
                 body: "New film is successfully added to your card. Check it!",
-                from: new Twilio.Types.PhoneNumber("+1 978 652 3857"),
+                from: new Twilio.Types.PhoneNumber("+19786523857"),
                 to: new Twilio.Types.PhoneNumber(user.PhoneNumber));
                 //var message = MessageResource.Create(to: new Twilio.Types.PhoneNumber(user.PhoneNumber), from: new Twilio.Types.PhoneNumber("+19786523857"), body: "New film is successfully added to your card. Check it!");
 
@@ -125,7 +127,7 @@ namespace Movie.Web.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Guid id, [Bind("Name,Description, datum, zanr, Price, ImageURL")] MovieFilm film)
+        public IActionResult Edit(Guid id, [Bind("Name,Description, datum, zanr, Price, ImageURL, trailerURL")] MovieFilm film)
         {
             MovieFilm movie = _movieService.GetDetailsForTicket(id);
 
@@ -144,6 +146,7 @@ namespace Movie.Web.Controllers
                     movie.zanr = film.zanr;
                     movie.Price = film.Price;
                     movie.ImageURL = film.ImageURL;
+                    movie.trailerURL = film.trailerURL;
                     this._movieService.UpdeteExistingTicket(movie);
                 }
                 catch (DbUpdateConcurrencyException)

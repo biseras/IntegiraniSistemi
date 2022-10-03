@@ -29,6 +29,8 @@ namespace Movie.Domain.Models
         public string ImageURL { get; set; }
         public virtual ICollection<FilminShoppingCart> filmsinshoppingcart { get; set; }//ticketsinshoppingcart
         public virtual ICollection<FilmInOrder> Orders { get; set; }
+
+        public string trailerURL { get; set; }
         //public MovieCategory MovieCategory { get; set; }
 
         //Relationships

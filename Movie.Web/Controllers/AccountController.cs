@@ -13,6 +13,7 @@ namespace Movie.Web.Controllers
 {
     public class AccountController : Controller
     {
+        private readonly RoleManager<IdentityRole> roleManager;
         private readonly UserManager<MovieUsers> userManager;
         private readonly SignInManager<MovieUsers> signInManager;
         public AccountController(UserManager<MovieUsers> userManager, SignInManager<MovieUsers> signInManager)
