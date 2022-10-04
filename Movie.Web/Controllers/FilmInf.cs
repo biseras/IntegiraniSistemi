@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Movie.Domain.Models;
 using Movie.Service.Interface;
+using Microsoft.Extensions.Logging;
 
 namespace Movie.Web.Controllers
 {
@@ -17,9 +18,11 @@ namespace Movie.Web.Controllers
     {
 
         private readonly IMovieService _movieService;
+        private readonly ILogger<FilmInf> _logger;
 
-        public FilmInf(IMovieService movieService)
+        public FilmInf(ILogger<FilmInf> logger, IMovieService movieService)
         {
+            _logger = logger;
             _movieService = movieService;
         }
 
@@ -50,6 +53,7 @@ namespace Movie.Web.Controllers
             HttpResponseMessage response = client.GetAsync(URL).Result;
             var data = response.Content.ReadAsAsync<MovieA>().Result;
             data.Added = this._movieService.GetMovieByName(data.Title) != null ? true: false;
+            _logger.LogInformation("Korisnikot prebaruva informacii za nekoj film");
             return View("Index", data);
         }
 
@@ -61,6 +65,7 @@ namespace Movie.Web.Controllers
             HttpResponseMessage response = client.GetAsync(URL).Result;
             var data = response.Content.ReadAsAsync<MovieA>().Result;
             data.Added = added;
+            _logger.LogInformation("Korisnikot gleda informacii za nekoj film");
             return View("Index", data);
         }
 

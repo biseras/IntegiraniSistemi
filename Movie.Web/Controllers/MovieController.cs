@@ -86,7 +86,7 @@ namespace Movie.Web.Controllers
             var result = this._movieService.AddToShoppingCart(item, userId);
             MovieUsers user = _userService.Get(userId);
             var accountSID = "ACcb5ff2b20332747e2b91ec16438b1b44";
-            var authToken = "6646a00114a64621e56cdd8804f706f2";
+            var authToken = "1222ad496fe284d354ec792d70a9accd";
             TwilioClient.Init(accountSID, authToken);
             var tonum = user.PhoneNumber;
             var from = "+19786523857";

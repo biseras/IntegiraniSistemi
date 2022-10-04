@@ -1,10 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Movie.Domain.DTO;
+using Movie.Domain.Identity;
 using Movie.Domain.Models;
+using Movie.Service.Interface;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Movie.Web.Controllers
@@ -12,10 +18,12 @@ namespace Movie.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IUserService _userService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IUserService userService)
         {
-            _logger = logger;
+            _logger = logger;  
+            _userService = userService;
         }
 
         public IActionResult Index()
@@ -27,7 +35,36 @@ namespace Movie.Web.Controllers
         {
             return View();
         }
-
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Contact([Bind("subject", "message")] MailDto item)
+        {
+            if (ModelState.IsValid)
+            {
+                String sub = item.subject;
+            }
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            MovieUsers user = _userService.Get(userId);
+            MailAddress from = new MailAddress("integriraniproekt@outlook.com");
+            MailAddress to = new MailAddress("integriraniproekt@outlook.com");
+            MailMessage mail = new MailMessage(to, from);
+            mail.Subject = item.subject;
+            mail.Body = item.message;
+            mail.IsBodyHtml = false;
+            SmtpClient smtp = new SmtpClient("smtp.office365.com", 587);
+            smtp.Timeout = 1000000;
+            smtp.EnableSsl = true;
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            NetworkCredential nc = new NetworkCredential("integriraniproekt@outlook.com", "MovieApp123!");
+            smtp.UseDefaultCredentials = false;
+            smtp.Credentials = nc;
+            smtp.Send(mail);
+            _logger.LogInformation("Korisnikot prakja poraka za kontakt");
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -53,7 +53,7 @@ namespace Movie.Web
             //services.AddScoped<IBackgroundEmailSender, BackgroundEmailSender>();
             //services.AddHostedService<EmailScopedHostedService>();
             services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
-            StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
+            //StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
@@ -61,6 +61,7 @@ namespace Movie.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

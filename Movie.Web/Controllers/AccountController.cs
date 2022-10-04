@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Movie.Domain.Domain;
 using Movie.Domain.Identity;
 using System;
@@ -15,9 +16,11 @@ namespace Movie.Web.Controllers
     {
         private readonly UserManager<MovieUsers> userManager;
         private readonly SignInManager<MovieUsers> signInManager;
-        public AccountController(UserManager<MovieUsers> userManager, SignInManager<MovieUsers> signInManager)
-        {
+        private readonly ILogger<AccountController> _logger;
 
+        public AccountController(ILogger<AccountController> logger, UserManager<MovieUsers> userManager, SignInManager<MovieUsers> signInManager)
+        {
+            _logger = logger;
             this.userManager = userManager;
             this.signInManager = signInManager;
         }
@@ -51,6 +54,7 @@ namespace Movie.Web.Controllers
                     var result = await userManager.CreateAsync(user, request.Password);
                     if (result.Succeeded)
                     {
+                        _logger.LogInformation("Registriran e nov korisnik");
                         return RedirectToAction("Login");
                     }
                     else
@@ -107,6 +111,7 @@ namespace Movie.Web.Controllers
 
                 if (result.Succeeded)
                 {
+                    _logger.LogInformation("Korisnikot e najaven");
                     await userManager.AddClaimAsync(user, new Claim("UserRole", "Admin"));
                     return RedirectToAction("Index", "Home");
                 }
@@ -123,6 +128,7 @@ namespace Movie.Web.Controllers
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
+            _logger.LogInformation("Korisnikot se odjavuva od svojata korisnicka smetka");
             return RedirectToAction("Login", "Account");
         }
     }

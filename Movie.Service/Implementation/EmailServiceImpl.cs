@@ -5,6 +5,8 @@ using MimeKit;
 using System.Threading.Tasks;
 using System.Text;
 using Movie.Service.Interface;
+using Movie.Domain;
+using Movie.Domain.Domain;
 
 namespace Movie.Service.Implementation
 {
@@ -32,7 +34,7 @@ namespace Movie.Service.Implementation
 
                 emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Plain) { Text = item.Content };
 
-                emailMessage.To.Add(new MailboxAddress(item.emailsendTo, item.emailsendTo));
+                emailMessage.To.Add(new MailboxAddress(item.MailTo, item.MailTo));
 
                 messages.Add(emailMessage);
             }
