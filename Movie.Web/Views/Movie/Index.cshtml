@@ -5,19 +5,21 @@
 }
 
 <h1>Movies</h1>
-
-<p>
+@if (User.IsInRole("Administrators"))
+{
+    <p>
     <a asp-action="Create" class="btn-outline-dark">Create New</a>
-</p>
-<form asp-controller="Movie" asp-action="ImportMovies" method="post" enctype="multipart/form-data">
-    <div class="form-group w-25">
-        <input type="file" name="file" class="form-control" />
-    </div>
+    </p>
+    <form asp-controller="Movie" asp-action="ImportMovies" method="post" enctype="multipart/form-data">
+        <div class="form-group w-25">
+            <input type="file" name="file" class="form-control" />
+        </div>
 
-    <hr>
+        <hr>
 
-    <button type="submit" class="btn btn-outline-primary">Import File</button>
-</form>
+        <button type="submit" class="btn btn-outline-primary">Import File</button>
+    </form>
+}
 
     <div class="row">
 
@@ -36,9 +38,12 @@
                         </ul>
                         <a asp-controller="Movie" asp-action="AddTicketToCard" asp-route-id="@item.Id" class="btn btn-info">Add to Card</a>
                         <br />
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        @if (User.IsInRole("Administrators"))
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> 
+                        }
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a>
                     </div>
                 </div>
             </div>

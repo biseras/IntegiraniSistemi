@@ -54,6 +54,7 @@ namespace Movie.Web.Controllers
                     var result = await userManager.CreateAsync(user, request.Password);
                     if (result.Succeeded)
                     {
+                        await userManager.AddToRoleAsync(user, "User");
                         _logger.LogInformation("Registriran e nov korisnik");
                         return RedirectToAction("Login");
                     }

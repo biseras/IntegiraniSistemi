@@ -11,9 +11,11 @@ using System.Threading.Tasks;
 using Movie.Domain.Models;
 using Movie.Service.Interface;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Movie.Web.Controllers
 {
+    [Authorize(Roles = "Administrators, Users")]
     public class FilmInf : Controller
     {
 

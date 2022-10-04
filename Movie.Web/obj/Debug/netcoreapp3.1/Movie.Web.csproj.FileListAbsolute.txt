@@ -318,7 +318,6 @@ D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libSkiaSh
 D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\libSkiaSharp.dll
 D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
 D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\ExcelDataReader.dll
 C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\petko\Desktop\finki\IntegiraniSistemi\Movie.Web\bin\Debug\netcoreapp3.1\appsettings.json
@@ -629,3 +628,16 @@ C:\Users\38977\source\repos\MovieIntegrirani\Movie.Web\bin\Debug\netcoreapp3.1\n
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Web\bin\Debug\netcoreapp3.1\NLog.dll
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Web\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
 C:\Users\38977\source\repos\MovieIntegrirani\Movie.Web\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\nlog.config
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\NLog.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\System.Formats.Asn1.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Cng.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+D:\IS PROEKT\Movie.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+D:\IS PROEKT\Movie.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs

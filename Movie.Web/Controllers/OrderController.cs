@@ -7,9 +7,11 @@ using System;
 using GemBox.Document;
 using System.IO;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Movie.Web.Controllers
 {
+    [Authorize(Roles = "Administrators, Users")]
     public class OrderController : Controller
     {
         private readonly IOrderService _orderService;

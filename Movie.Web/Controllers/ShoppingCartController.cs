@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Movie.Domain.Identity;
@@ -12,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace Movie.Web.Controllers
 {
+    [Authorize(Roles = "Administrators, Users")]
     public class ShoppingCartController : Controller
     {
         private readonly IShoppingCartService _shopingCartService;
