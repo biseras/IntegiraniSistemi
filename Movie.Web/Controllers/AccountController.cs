@@ -28,6 +28,12 @@ namespace Movie.Web.Controllers
             return View(model);
         }
 
+        public IActionResult AddUserToRole()
+        {
+            UserRegistrationDto model = new UserRegistrationDto();
+            return View(model);
+        }
+
         [HttpPost, AllowAnonymous]
         public async Task<IActionResult> Register(UserRegistrationDto request)
         {
@@ -51,6 +57,7 @@ namespace Movie.Web.Controllers
                     var result = await userManager.CreateAsync(user, request.Password);
                     if (result.Succeeded)
                     {
+                        await userManager.AddToRoleAsync(user,"User");
                         return RedirectToAction("Login");
                     }
                     else

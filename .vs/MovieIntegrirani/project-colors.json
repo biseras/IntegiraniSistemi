@@ -20,6 +20,11 @@
       "ProjectGuid": "e00758fe-56c4-491a-8cb3-22c4275e1f6a",
       "DisplayName": "Movie.Repository",
       "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 4

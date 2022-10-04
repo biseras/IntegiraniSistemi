@@ -1,0 +1,409 @@
+﻿++Solution 'MovieIntegrirani' ‎(4 of 4 projects)
+i:{00000000-0000-0000-0000-000000000000}:MovieIntegrirani.sln
+++Movie.Repository
+i:{00000000-0000-0000-0000-000000000000}:Movie.Repository
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.repository\movie.repository.csproj
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.repository\movie.repository.csproj
+++Dependencies
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:>807
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:>806
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:>805
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1197
+++Implementation
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\implementation\
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\implementation\
+++MovieRepository.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\implementation\movierepository.cs
+++OrderRepository.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\implementation\orderrepository.cs
+++Repository.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\implementation\repository.cs
+++UserRepository.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\implementation\userrepository.cs
+++Interface
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\interface\
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\interface\
+++Migrations
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\
+++ApplicationDbContext.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\applicationdbcontext.cs
+++Class1.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\class1.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\class1.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\class1.cs
+++Analyzers
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:analyzers
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:analyzers
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:analyzers
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:analyzers
+++Frameworks
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:frameworks
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:frameworks
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:frameworks
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:frameworks
+++Packages
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:packages
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:packages
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:packages
+++Projects
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:projects
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:projects
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:projects
+++IMovieRepository.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\interface\imovierepository.cs
+++IOrderRepository.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\interface\iorderrepository.cs
+++IRepository.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\interface\irepository.cs
+++IUserRepository.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\interface\iuserrepository.cs
+++00000000000000_CreateIdentitySchema.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\00000000000000_createidentityschema.cs
+++20220911122254_initial.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\20220911122254_initial.cs
+++20220916114951_new.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\20220916114951_new.cs
+++20220925223811_newMigration.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\20220925223811_newmigration.cs
+++20220925230324_newMigration2.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\20220925230324_newmigration2.cs
+++20221002235844_initial01.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\20221002235844_initial01.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\applicationdbcontextmodelsnapshot.cs
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.15\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.15\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.15\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.15\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.NETCore.App
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\microsoft.netcore.app
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\microsoft.netcore.app
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\microsoft.netcore.app
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\microsoft.netcore.app
+++Microsoft.EntityFrameworkCore.SqlServer (3.1.10)
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:>1212
+++Movie.Domain
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.domain\movie.domain.csproj
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.domain\movie.domain.csproj
+i:{00000000-0000-0000-0000-000000000000}:Movie.Domain
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.domain\movie.domain.csproj
+++00000000000000_CreateIdentitySchema.Designer.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\00000000000000_createidentityschema.designer.cs
+++20220911122254_initial.Designer.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\20220911122254_initial.designer.cs
+++20220916114951_new.Designer.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\20220916114951_new.designer.cs
+++20220925223811_newMigration.Designer.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\20220925223811_newmigration.designer.cs
+++20220925230324_newMigration2.Designer.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\20220925230324_newmigration2.designer.cs
+++20221002235844_initial01.Designer.cs
+i:{e00758fe-56c4-491a-8cb3-22c4275e1f6a}:d:\is proekt\movie.repository\migrations\20221002235844_initial01.designer.cs
+++Movie.Service
+i:{00000000-0000-0000-0000-000000000000}:Movie.Service
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.service\movie.service.csproj
+++BackgroundEmailSender.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\implementation\backgroundemailsender.cs
+++EmailServiceImpl.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\implementation\emailserviceimpl.cs
+++IUserServiceImpl.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\implementation\iuserserviceimpl.cs
+++MovieAImpl.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\implementation\movieaimpl.cs
+++MovieService.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\implementation\movieservice.cs
+++OrderService.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\implementation\orderservice.cs
+++ShoppingCartService.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\implementation\shoppingcartservice.cs
+++IBackgroundEmailSender.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\interface\ibackgroundemailsender.cs
+++IEmailService.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\interface\iemailservice.cs
+++IMovieA.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\interface\imoviea.cs
+++IMovieService.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\interface\imovieservice.cs
+++IOrderService.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\interface\iorderservice.cs
+++IShoppingCartService.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\interface\ishoppingcartservice.cs
+++IUserService.cs
+i:{af8b82ec-06b0-4f57-8655-da0b16189e71}:d:\is proekt\movie.service\interface\iuserservice.cs
+++DTO
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\dto\
+++Identity
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\identity\
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\areas\identity\
+++Models
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\models\
+++StripeSettings.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\stripesettings.cs
+++AddToShoppingCartDto.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\dto\addtoshoppingcartdto.cs
+++MovieDto.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\dto\moviedto.cs
+++ShoppingCartDto.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\dto\shoppingcartdto.cs
+++MovieUsers.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\identity\movieusers.cs
+++UserLoginDto.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\identity\userlogindto.cs
+++UserRegistrationDto.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\identity\userregistrationdto.cs
+++BaseEntity.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\models\baseentity.cs
+++EmailMessage.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\models\emailmessage.cs
+++ErrorViewModel.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\models\errorviewmodel.cs
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\errorviewmodel.cs
+++FilmInOrder.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\models\filminorder.cs
+++FilminShoppingCart.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\models\filminshoppingcart.cs
+++MovieA.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\models\moviea.cs
+++MovieFilm.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\models\moviefilm.cs
+++Order.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\models\order.cs
+++ShoppingCart.cs
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:d:\is proekt\movie.domain\models\shoppingcart.cs
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (3.1.15)
+i:{02722786-5975-41b9-a8ed-3e06ea250fc1}:>1207
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1226
+++Movie.Web
+i:{00000000-0000-0000-0000-000000000000}:Movie.Web
+++Connected Services 
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1198
+++Properties
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\properties\
+++wwwroot
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\
+++Areas
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\areas\
+++Controllers
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\controllers\
+++AccountController.cs
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\controllers\accountcontroller.cs
+++FilmInf.cs
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\controllers\filminf.cs
+++HomeController.cs
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\controllers\homecontroller.cs
+++MovieController.cs
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\controllers\moviecontroller.cs
+++OrderController.cs
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\controllers\ordercontroller.cs
+++ShoppingCartController.cs
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\controllers\shoppingcartcontroller.cs
+++files
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\files\
+++Views
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\
+++Account
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\account\
+++FilmInf
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\filminf\
+++Index.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\filminf\index.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\movie\index.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\home\index.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\order\index.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\shoppingcart\index.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\user\index.cshtml
+++Movie.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\filminf\movie.cshtml
+++Home
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\home\
+++Movie
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\movie\
+++AddTicketToCard.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\movie\addtickettocard.cshtml
+++Create.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\movie\create.cshtml
+++Delete.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\movie\delete.cshtml
+++Details.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\movie\details.cshtml
+++Edit.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\movie\edit.cshtml
+++Order
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\order\
+++Shared
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\shared\
+++ShoppingCart
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\shoppingcart\
+++User
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\user\
+++_ViewImports.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\_viewstart.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\areas\identity\pages\_viewstart.cshtml
+++appsettings.json
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\appsettings.json
+++Invoice.docx
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\invoice.docx
+++Program.cs
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\program.cs
+++Startup.cs
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\startup.cs
+++SQL Server Express LocalDB (Local) (ConnectionStrings:DefaultConnection)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1251
+++launchSettings.json
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\properties\launchsettings.json
+++serviceDependencies.json
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\properties\servicedependencies.json
+++css
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\css\
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\
+++js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\js\
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\
+++favicon.ico
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\favicon.ico
+++movies.xlsx
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\files\movies.xlsx
+++Login.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\account\login.cshtml
+++Register.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\account\register.cshtml
+++Privacy.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\home\privacy.cshtml
+++_Layout.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\shared\_layout.cshtml
+++_LoginPartial.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\shared\_loginpartial.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\views\shared\error.cshtml
+++appsettings.Development.json
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:c:\users\user\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:c:\users\user\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\microsoft.aspnetcore.app
+++ExcelDataReader (3.6.0)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1227
+++GemBox.Document (35.0.1105)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1234
+++Microsoft.AspNet.WebApi.Client (5.2.9)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1224
+++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (3.1.15)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1225
+++Microsoft.AspNetCore.Identity.UI (3.1.15)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1233
+++Microsoft.EntityFrameworkCore.SqlServer (3.1.15)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1223
+++Microsoft.EntityFrameworkCore.Tools (3.1.15)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1229
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (3.1.5)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1232
+++Stripe.net (40.8.0)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1230
+++Twilio (5.80.0)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1231
+++Twilio.AspNet.Mvc (6.0.0)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1228
+++serviceDependencies.local.json
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\properties\servicedependencies.local.json
+++site.css
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\css\site.css
+++site.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\js\site.js
+++bootstrap
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\
+++jquery
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery\
+++jquery-validation
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation-unobtrusive\
+++Pages
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\areas\identity\pages\
+++dist
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery\dist\
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery\license.txt
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap-grid.css.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-reboot.css.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap.bundle.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.js.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap-grid.min.css.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-reboot.min.css.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap.bundle.js.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.min.js.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.bundle.min.js.map
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:d:\is proekt\movie.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++Secrets.json (Local)
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1296
+++Secrets.json (Local) dependency is detected
+i:{2d2db9f8-ad89-43c5-a460-d066d0e5dea4}:>1297

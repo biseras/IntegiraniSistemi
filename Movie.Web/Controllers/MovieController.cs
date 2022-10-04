@@ -15,9 +15,11 @@ using System.IO;
 using System.Collections.Generic;
 using ExcelDataReader;
 using Movie.Domain.Domain;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Movie.Web.Controllers
 {
+    [Authorize(Roles = "Administrators, Users")]
     public class MovieController : Controller
     {
         private readonly IMovieService _movieService;
@@ -52,13 +54,14 @@ namespace Movie.Web.Controllers
 
             return View(film);
         }
-
+        [Authorize(Roles = "Administrators")]
         // GET: Tickets/Create
         public IActionResult Create()
         {
             return View();
         }
 
+        [Authorize(Roles = "Administrators")]
         // POST: Tickets/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -73,11 +76,13 @@ namespace Movie.Web.Controllers
             }
             return View(film);
         }
+
         public IActionResult AddTicketToCard(Guid? id)
         {
             var model = this._movieService.GetShoppingCartInfo(id);
             return View(model);
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult AddTicketToCard([Bind("FilmId", "Kvalitet")] AddToShoppingCartDto item)
@@ -104,6 +109,7 @@ namespace Movie.Web.Controllers
             return View(item);
         }
 
+        [Authorize(Roles = "Administrators")]
         // GET: Tickets/Edit/5
         public IActionResult Edit(Guid? id)
         {
@@ -120,6 +126,7 @@ namespace Movie.Web.Controllers
             return View(film);
         }
 
+        [Authorize(Roles = "Administrators")]
         // POST: Tickets/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -162,6 +169,7 @@ namespace Movie.Web.Controllers
             return View(film);
         }
 
+        [Authorize(Roles = "Administrators")]
         // GET: Tickets/Delete/5
         public IActionResult Delete(Guid? id)
         {
@@ -179,6 +187,7 @@ namespace Movie.Web.Controllers
             return View(film);
         }
 
+        [Authorize(Roles = "Administrators")]
         // POST: Tickets/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -193,6 +202,7 @@ namespace Movie.Web.Controllers
             return this._movieService.GetDetailsForTicket(id) != null;
         }
 
+        [Authorize(Roles = "Administrators")]
         public IActionResult ImportMovies(IFormFile file)
         {
             string pathToUpload = $"{Directory.GetCurrentDirectory()}\\files\\{file.FileName}";
@@ -220,6 +230,7 @@ namespace Movie.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Administrators")]
         private List<MovieFilm> getAllMoviesFromFile(string fileName)
         {
             List<MovieFilm> movies = new List<MovieFilm>();
@@ -255,6 +266,7 @@ namespace Movie.Web.Controllers
             return movies;
         }
 
+        [Authorize(Roles = "Administrators")]
         public IActionResult AddMovieFromApi(string title, string description, string genre, string image)
         {
             MovieFilm film = new MovieFilm
