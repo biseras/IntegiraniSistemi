@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IS PROEKT\\Movie.Domain\\Movie.Domain.csproj": {}
+    "C:\\Users\\petko\\Desktop\\IntegiraniSistemi\\Movie.Domain\\Movie.Domain.csproj": {}
   },
   "projects": {
-    "D:\\IS PROEKT\\Movie.Domain\\Movie.Domain.csproj": {
+    "C:\\Users\\petko\\Desktop\\IntegiraniSistemi\\Movie.Domain\\Movie.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IS PROEKT\\Movie.Domain\\Movie.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\petko\\Desktop\\IntegiraniSistemi\\Movie.Domain\\Movie.Domain.csproj",
         "projectName": "Movie.Domain",
-        "projectPath": "D:\\IS PROEKT\\Movie.Domain\\Movie.Domain.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\IS PROEKT\\Movie.Domain\\obj\\",
+        "projectPath": "C:\\Users\\petko\\Desktop\\IntegiraniSistemi\\Movie.Domain\\Movie.Domain.csproj",
+        "packagesPath": "C:\\Users\\petko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\petko\\Desktop\\IntegiraniSistemi\\Movie.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\petko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }

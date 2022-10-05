@@ -68,7 +68,7 @@ namespace Movie.Web.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Name,Description, datum, zanr, Price, ImageURL")] MovieFilm film)
+        public IActionResult Create([Bind("Name,Description, datum, zanr, Price, ImageURL, trailerURL")] MovieFilm film)
         {
             if (ModelState.IsValid)
             {
@@ -131,7 +131,7 @@ namespace Movie.Web.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Guid id, [Bind("Name,Description, datum, zanr, Price, ImageURL")] MovieFilm film)
+        public IActionResult Edit(Guid id, [Bind("Name,Description, datum, zanr, Price, ImageURL, trailerURL")] MovieFilm film)
         {
             MovieFilm movie = _movieService.GetDetailsForTicket(id);
 
@@ -150,6 +150,7 @@ namespace Movie.Web.Controllers
                     movie.zanr = film.zanr;
                     movie.Price = film.Price;
                     movie.ImageURL = film.ImageURL;
+                    movie.trailerURL = film.trailerURL;
                     this._movieService.UpdeteExistingTicket(movie);
                 }
                 catch (DbUpdateConcurrencyException)

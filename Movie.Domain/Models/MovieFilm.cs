@@ -23,12 +23,15 @@ namespace Movie.Domain.Models
 
         public string Name { get; set; }//ticketfor
         public string Description { get; set; }//mesto
+        [DataType(DataType.Date)]
         public DateTime datum { get; set; }
         public string zanr { get; set; }
         public int Price { get; set; }//ticketprice
         public string ImageURL { get; set; }
         public virtual ICollection<FilminShoppingCart> filmsinshoppingcart { get; set; }//ticketsinshoppingcart
         public virtual ICollection<FilmInOrder> Orders { get; set; }
+        public string trailerURL { get; set; }
+
         //public MovieCategory MovieCategory { get; set; }
 
         //Relationships
